@@ -26,7 +26,7 @@ export const ChipWrapper = styled.button<{
   border-radius: 24px;
   padding: 8px 16px;
   background-color: ${({ theme, $isClicked }) =>
-    $isClicked ? theme.colors.primary : theme.colors.lightGray};
+    $isClicked ? theme.colors.main.primary : theme.colors.lightGray};
   color: ${({ theme, $isClicked }) => ($isClicked ? theme.colors.white : theme.colors.black)};
   cursor: pointer;
 `;
