@@ -16,7 +16,7 @@ export const Header = styled.header`
   align-items: center;
   width: 100%;
   height: 10%;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.white};
   border-bottom: 1px solid ${({ theme }) => theme.colors.darkGray};
 `;
 
