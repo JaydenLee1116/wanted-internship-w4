@@ -2,8 +2,14 @@ import { color } from './color.styled';
 
 export const theme = {
   colors: {
-    primary: color.teal[600],
-    secondary: color.teal[200],
+    main: {
+      primary: color.teal[600],
+      secondary: color.teal[200],
+    },
+    sub: {
+      primary: color.orange[600],
+      secondary: color.orange[200],
+    },
     success: color.green[600],
     warning: color.yellow[600],
     error: color.red[600],

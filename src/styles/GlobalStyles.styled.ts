@@ -11,8 +11,4 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
-  html {
-    width: 100vw;
-    height: 100vh;
-  }
 `;

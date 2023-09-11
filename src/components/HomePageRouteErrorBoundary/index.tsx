@@ -19,7 +19,7 @@ export const HomePageRouteErrorBoundary = () => {
 
   if (isRouteErrorResponse(error)) {
     return (
-      <section>
+      <S.Container>
         <S.Title>잘못된 경로입니다.</S.Title>
         <S.Description>
           <S.ErrorPath>{pathname}</S.ErrorPath> 은 존재하지 않는 경로입니다.
@@ -27,7 +27,7 @@ export const HomePageRouteErrorBoundary = () => {
         <S.Description>
           <S.NavigateTime>3초</S.NavigateTime> 후 메인 페이지로 이동합니다.
         </S.Description>
-      </section>
+      </S.Container>
     );
   }
 

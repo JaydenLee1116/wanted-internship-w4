@@ -1,5 +1,16 @@
 import { styled } from 'styled-components';
 
+export const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  width: 100vw;
+  height: 100vh;
+  gap: 16px;
+`;
+
 export const Title = styled.h2`
   font-size: 32px;
   font-weight: bold;

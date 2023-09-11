@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
-import { TimeSeriesPage as HomePage } from '../pages/TimeSeriesPage';
+import { ChartPage as HomePage } from '../pages/ChartPage';
 import { HomePageRouteErrorBoundary } from '../components/HomePageRouteErrorBoundary';
 
 export const router = createBrowserRouter([
