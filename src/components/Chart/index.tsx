@@ -15,7 +15,12 @@ import {
 import { useTheme } from 'styled-components';
 
 import { Datum } from '../../types';
-import { Y_AXIS_ID_LEFT, Y_AXIS_ID_RIGHT } from '../../constants';
+import {
+  GRID_STROKE_DASH_ARRAY,
+  X_AXIS_INTERVAL,
+  Y_AXIS_ID_LEFT,
+  Y_AXIS_ID_RIGHT,
+} from '../../constants';
 
 interface ChartProps {
   data?: Datum[];
@@ -28,8 +33,8 @@ export const Chart = ({ data, selectedGuId, onClick }: ChartProps) => {
   return (
     <ResponsiveContainer width="80%" height="80%">
       <ComposedChart width={1200} height={640} data={data}>
-        <CartesianGrid stroke={theme.colors.darkGray} strokeDasharray="5" />
-        <XAxis dataKey="time" stroke={theme.colors.black} interval={5} />
+        <CartesianGrid stroke={theme.colors.darkGray} strokeDasharray={GRID_STROKE_DASH_ARRAY} />
+        <XAxis dataKey="time" stroke={theme.colors.black} interval={X_AXIS_INTERVAL} />
         <YAxis
           yAxisId={Y_AXIS_ID_RIGHT}
           dataKey="value_bar"
