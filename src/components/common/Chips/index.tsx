@@ -14,6 +14,7 @@ interface ChipProps {
   width?: string;
   height?: string;
   isClicked?: boolean;
+  onClick?: () => void;
 }
 
 export const Chips = ({ children, width, height, gap }: ChipsProps) => {
@@ -24,9 +25,9 @@ export const Chips = ({ children, width, height, gap }: ChipsProps) => {
   );
 };
 
-const Chip = ({ children, width, height, isClicked }: ChipProps) => {
+const Chip = ({ children, width, height, isClicked, onClick }: ChipProps) => {
   return (
-    <S.ChipWrapper $width={width} $height={height} $isClicked={isClicked}>
+    <S.ChipWrapper $width={width} $height={height} $isClicked={isClicked} onClick={onClick}>
       {children}
     </S.ChipWrapper>
   );
