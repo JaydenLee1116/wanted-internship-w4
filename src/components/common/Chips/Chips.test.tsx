@@ -15,7 +15,7 @@ describe('Chips', () => {
   });
 });
 
-describe.only('Chip', () => {
+describe('Chip', () => {
   it('should render Chip component', () => {
     const { chipList } = setup();
     const firstChip = chipList[0];
