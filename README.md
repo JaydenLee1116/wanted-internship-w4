@@ -10,7 +10,7 @@
 
 ### 1. Git clone 및 폴더 이동
 
-[제이든 - 원티드 프리온보딩 인턴십 프론트엔드 사전과제 repo](https://github.com/JaydenLee1116/wanted-internship-w4)로 이동하여 `clone` 합니다.
+[원티드 프리온보딩 인턴십 프론트엔드 미션 - Week 4(final)](https://github.com/JaydenLee1116/wanted-internship-w4)로 이동하여 `clone` 합니다.
 
 ```shell
 # Code - HTTPS clone 예시
