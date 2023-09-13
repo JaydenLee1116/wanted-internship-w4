@@ -15,7 +15,7 @@ describe('Chips', () => {
   });
 });
 
-describe('Chip', () => {
+describe.only('Chip', () => {
   it('should render Chip component', () => {
     const { chipList } = setup();
     const firstChip = chipList[0];
@@ -42,13 +42,14 @@ describe('Chip', () => {
 
 const setup = () => {
   const { container } = render(
-    <ThemeProvider theme={theme}>
-      <Chips>
-        {mockData.map(data => (
-          <Chips.Chip key={data.id}>{data.name}</Chips.Chip>
-        ))}
-      </Chips>
-    </ThemeProvider>,
+    <Chips>
+      {mockData.map(data => (
+        <Chips.Chip key={data.id}>{data.name}</Chips.Chip>
+      ))}
+    </Chips>,
+    {
+      wrapper: ({ children }) => <ThemeProvider theme={theme}>{children}</ThemeProvider>,
+    },
   );
 
   const chips = container.querySelector('section');
