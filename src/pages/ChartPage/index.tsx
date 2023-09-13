@@ -4,11 +4,12 @@ import { useGetData } from '../../services/useGetData';
 import { getDeduplicatedArray } from '../../utils/getDeduplicatedArray';
 import { Chips } from '../../components/common/Chips';
 import { Chart } from '../../components/Chart';
+import { LoadingPage } from '../LoadingPage';
 import { COPYRIGHT, TOTAL_ID } from '../../constants';
 import * as S from './ChartPage.styled';
 
 export const ChartPage = () => {
-  const { data } = useGetData();
+  const { data, isLoading } = useGetData();
   const guIds = getDeduplicatedArray(data ? [TOTAL_ID, ...data.map(v => v.id)] : [TOTAL_ID]);
   const [selectedGuId, setSelectedGuId] = useState(guIds[0]);
   const handleClickForFilter = (guId: string) => {
@@ -17,6 +18,7 @@ export const ChartPage = () => {
 
   return (
     <>
+      {isLoading && <LoadingPage />}
       {data && (
         <S.Container>
           <S.Header>
