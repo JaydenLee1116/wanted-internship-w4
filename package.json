@@ -29,7 +29,8 @@
     "eject": "react-scripts eject",
     "format": "prettier --cache --write .",
     "lint": "eslint --cache .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cypress:open": "cypress open"
   },
   "lint-staged": {
     "*.tsx": [
@@ -60,6 +61,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
+    "cypress": "^13.2.0",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
