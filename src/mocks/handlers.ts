@@ -4,6 +4,6 @@ import data from './db';
 
 export const handlers = [
   rest.get(MOCK_API_BASE_URL, (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json({ data }));
+    return res(ctx.status(200), ctx.json(data));
   }),
 ];
