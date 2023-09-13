@@ -27,11 +27,11 @@ export const Description = styled.p`
 export const ErrorPath = styled.code`
   font-size: 16px;
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.error};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 export const NavigateTime = styled.div`
   font-size: 16px;
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.error};
+  color: ${({ theme }) => theme.colors.red};
 `;
